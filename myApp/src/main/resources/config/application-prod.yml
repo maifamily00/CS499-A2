@@ -19,10 +19,10 @@ spring:
             enabled: false
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://localhost:3306/myApp?useUnicode=true&characterEncoding=utf8&useSSL=false
+        url: jdbc:mysql://cs499a2.cezhllwsjcrf.us-west-2.rds.amazonaws.com:3306/CS499A2?useUnicode=true&characterEncoding=utf8&useSSL=false
         name:
-        username: root
-        password:
+        username: lxmai
+        password: Goku104c
         hikari:
             data-source-properties:
                 cachePrepStmts: true
@@ -77,7 +77,7 @@ jhipster:
             # security key (this key should be unique for your application, and kept secret)
             key: e6bf3ecc27505bf6d4bc88475ab4625f85dcc988
     mail: # specific JHipster mail property, for standard properties see MailProperties
-        from: myApp@localhost
+        from: CS499A2@localhost
         baseUrl: http://my-server-url-to-change # Modify according to your server's URL
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx.enabled: true
@@ -85,7 +85,7 @@ jhipster:
             enabled: false
             host: localhost
             port: 2003
-            prefix: myApp
+            prefix: CS499A2
         prometheus:
             enabled: false
             endpoint: /prometheusMetrics
